@@ -450,7 +450,7 @@ body {
     font-size: 1em;
   }
   .faq-question::after {
-    content: '+';
+    content: '';
     position: absolute;
     right: 10px;
     top: 50%;
