@@ -446,12 +446,15 @@ body {
   .feature-title {
     font-size: 1.3em;
   }
+  .faq-question{
+    font-size: 1em;
+  }
   .faq-question::after {
     content: '+';
     position: absolute;
     right: 25px;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-70%);
     font-size: 1.5em;
     font-weight: 600;
     transition: transform 0.3s ease;
