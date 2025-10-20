@@ -446,18 +446,21 @@ body {
   .feature-title {
     font-size: 1.3em;
   }
-  .faq-question{
-    font-size: 1em;
+  .faq-question {
+    font-size: 1em; /* Match your existing mobile size */
+    padding: 12px 35px 12px 12px; /* Slightly less padding for mobile, but enough for ::after */
   }
+
   .faq-question::after {
-    content: '';
-    position: absolute;
-    right: 10px;
-    top: 50%;
+    content: '+';
+    right: 12px; /* Adjusted for mobile */
+    font-size: 1em; /* Match your existing mobile size */
     transform: translateY(-50%);
-    font-size: 1em;
-    font-weight: 400;
-    transition: transform 0.3s ease;
+  }
+
+  .faq-question.active::after {
+    content: '–';
+    transform: translateY(-50%) rotate(180deg);
   }
   .footer-grid {
     grid-template-columns: 1fr; /* Stack items vertically */
