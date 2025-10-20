@@ -203,7 +203,6 @@ body {
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
   overflow: hidden;
   transition: all 0.3s ease;
-  animation: fadeIn 1s ease-in;
 }
 
 .faq-item:hover {
@@ -446,6 +445,16 @@ body {
 
   .feature-title {
     font-size: 1.3em;
+  }
+  .faq-question::after {
+    content: '+';
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    font-weight: 600;
+    transition: transform 0.3s ease;
   }
   .footer-grid {
     grid-template-columns: 1fr; /* Stack items vertically */
